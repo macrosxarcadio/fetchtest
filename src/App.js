@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Typography } from 'antd';
+const { Text } = Typography;
 
 function App() {
+  const [starships, setStarships] = useState('Naves');
+
+  async function fetchMovies() {
+    let naves = await fetch('https://swapi.dev/api/starships/');
+    let respuesta = await naves.json();
+    console.log(respuesta);
+    setStarships(respuesta.results.map(ship => ship.name));
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={() => fetchMovies()}>Fetch Movies</button>
+        <Text type="danger">{starships}</Text>
       </header>
     </div>
   );
