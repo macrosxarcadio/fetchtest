@@ -54,7 +54,7 @@ function App() {
             <Text>Not ready</Text>
             <Text>Not ready</Text>
             <Text>Not ready</Text>
-            <Text>Not ready</Text>
+            <Text>Not ready bla bla bla</Text>
             <Text>Not ready</Text>
             <Text>Not ready</Text>
             <Text>Not ready</Text>
