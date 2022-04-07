@@ -50,7 +50,12 @@ function App() {
         {datasource ? (
           <Table dataSource={datasource} columns={columns} pagination={false} />
         ) : (
-          <Text>Not ready</Text>
+          <>          <Text>Not ready</Text>
+            <Text>Not ready</Text>
+            <Text>Not ready</Text><Text>Not ready</Text>
+            <Text>Not ready</Text></>
+
+
         )}
       </header>
     </div>
