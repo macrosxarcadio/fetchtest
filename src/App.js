@@ -21,7 +21,7 @@ function App() {
     );
     setDatasource(allships);
   }
-
+  console.log("error");
   const columns = [
     {
       title: 'Name',
