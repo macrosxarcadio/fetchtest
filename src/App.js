@@ -52,9 +52,7 @@ function App() {
         ) : (
           <>          <Text>Not ready</Text>
             <Text>Not ready</Text>
-            <Text>Not ready</Text><Text>Not ready</Text>
-            <Text>Not ready</Text>
-            <Text>Not ready</Text></>
+            <Text>Not ready</Text><Text>Not ready</Text></>
 
 
         )}
