@@ -44,13 +44,18 @@ function App() {
         <Title leve={2}>Spaceships</Title>
         <button type="button" onClick={() => fetchMovies()}>
           {' '}
-          Fetch Ships{' '}
+          Ships{' '}
         </button>
         {datasource ? (
           <Table dataSource={datasource} columns={columns} pagination={false} />
         ) : (
           <>
             {' '}
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
             <Text>Not ready</Text>
             <Text>Not ready</Text>
             <Text>Not ready</Text>
