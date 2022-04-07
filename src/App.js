@@ -21,7 +21,6 @@ function App() {
     );
     setDatasource(allships);
   }
-  console.log("error");
   const columns = [
     {
       title: 'Name',
@@ -50,11 +49,13 @@ function App() {
         {datasource ? (
           <Table dataSource={datasource} columns={columns} pagination={false} />
         ) : (
-          <>          <Text>Not ready</Text>
+          <>
+            {' '}
             <Text>Not ready</Text>
-            <Text>Not ready</Text><Text>Not ready</Text></>
-
-
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
+            <Text>Not ready</Text>
+          </>
         )}
       </header>
     </div>
